@@ -26,7 +26,7 @@ class SocialPostCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\Bulkmake\BackpackSocialPlay\Models\SocialPost::class);
+        CRUD::setModel(\Bulkmake\LaravelSocialPlay\Models\SocialPost::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/social-post');
         CRUD::setEntityNameStrings('social post', 'social posts');
     }
